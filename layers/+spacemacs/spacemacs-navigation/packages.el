@@ -49,6 +49,8 @@
         (define-key Info-mode-map "o" 'ace-link-info))
       (with-eval-after-load 'help-mode
         (define-key help-mode-map "o" 'ace-link-help))
+      (with-eval-after-load 'man
+        (define-key Man-mode-map "o" 'link-hint-open-link))
       (with-eval-after-load 'woman
         (define-key woman-mode-map "o" 'link-hint-open-link))
       (with-eval-after-load 'eww
